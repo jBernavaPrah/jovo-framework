@@ -19,6 +19,7 @@ jobs:
         with:
           fetch-depth: '0'
 
+      - run: npm install --ci
       - run: npm run preparePublish
 
       - run: npm publish
