@@ -7,11 +7,11 @@ import { SipEndpoint } from './SipEndpoint';
 import { VBCEndpoint } from './VBCEndpoint';
 
 export enum EndpointType {
-    Phone = 'phone',
-    App = 'app',
-    WebSocket = 'websocket',
-    Sip = 'sip',
-    VBC = 'vbc',
+  Phone = 'phone',
+  App = 'app',
+  WebSocket = 'websocket',
+  Sip = 'sip',
+  VBC = 'vbc',
 }
 
 export type EndpointTypeLike = EnumLike<EndpointType>;
@@ -19,6 +19,6 @@ export type EndpointTypeLike = EnumLike<EndpointType>;
 export type Endpoint = PhoneEndpoint | AppEndpoint | WebSocketEndpoint | SipEndpoint | VBCEndpoint;
 
 export class EndpointBase<TYPE extends EndpointTypeLike = EndpointTypeLike> {
-    @IsEnum(EndpointType)
-     type!: TYPE;
+  @IsEnum(EndpointType)
+  type!: TYPE;
 }

@@ -1,4 +1,4 @@
 export enum EventMethodEnum {
-    POST = 'POST',
-    GET = 'GET',
+  POST = 'POST',
+  GET = 'GET',
 }

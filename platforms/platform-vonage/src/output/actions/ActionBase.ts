@@ -9,29 +9,29 @@ import { StreamAction } from './StreamAction';
 import { TalkAction } from './TalkAction';
 
 export enum ActionAction {
-    Record = 'record',
-    Conversation = 'conversation',
-    Connect = 'connect',
-    Talk = 'talk',
-    Stream = 'stream',
-    Input = 'input',
-    Notify = 'notify',
+  Record = 'record',
+  Conversation = 'conversation',
+  Connect = 'connect',
+  Talk = 'talk',
+  Stream = 'stream',
+  Input = 'input',
+  Notify = 'notify',
 }
 
 export type ActionActionLike = EnumLike<ActionAction>;
 
 export class ActionBase<TYPE extends ActionActionLike = ActionActionLike> {
-    [key: string]: unknown;
+  [key: string]: unknown;
 
-    @IsEnum(ActionAction)
-    declare action: TYPE;
+  @IsEnum(ActionAction)
+  declare action: TYPE;
 }
 
 export type Action =
-    | ConversationAction
-    | ConnectAction
-    | InputAction
-    | NotifyAction
-    | RecordAction
-    | StreamAction
-    | TalkAction;
+  | ConversationAction
+  | ConnectAction
+  | InputAction
+  | NotifyAction
+  | RecordAction
+  | StreamAction
+  | TalkAction;

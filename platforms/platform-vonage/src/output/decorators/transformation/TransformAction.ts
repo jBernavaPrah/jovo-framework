@@ -9,19 +9,19 @@ import { RecordAction } from '../../actions/RecordAction';
 import { StreamAction } from '../../actions/StreamAction';
 
 export function TransformAction(): PropertyDecorator {
-    return Type(() => ActionBase, {
-        keepDiscriminatorProperty: true,
-        discriminator: {
-            property: 'action',
-            subTypes: [
-                { value: ConnectAction, name: ActionAction.Connect },
-                { value: ConversationAction, name: ActionAction.Conversation },
-                { value: InputAction, name: ActionAction.Input },
-                { value: NotifyAction, name: ActionAction.Notify },
-                { value: RecordAction, name: ActionAction.Record },
-                { value: StreamAction, name: ActionAction.Stream },
-                { value: TalkAction, name: ActionAction.Talk },
-            ],
-        },
-    }) as PropertyDecorator;
+  return Type(() => ActionBase, {
+    keepDiscriminatorProperty: true,
+    discriminator: {
+      property: 'action',
+      subTypes: [
+        { value: ConnectAction, name: ActionAction.Connect },
+        { value: ConversationAction, name: ActionAction.Conversation },
+        { value: InputAction, name: ActionAction.Input },
+        { value: NotifyAction, name: ActionAction.Notify },
+        { value: RecordAction, name: ActionAction.Record },
+        { value: StreamAction, name: ActionAction.Stream },
+        { value: TalkAction, name: ActionAction.Talk },
+      ],
+    },
+  }) as PropertyDecorator;
 }

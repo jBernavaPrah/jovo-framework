@@ -1,5 +1,5 @@
 {
-  "extends": "./tsconfig-global.build.json",
+  "extends": "../../tsconfig.build.json",
   "compilerOptions": {
     "outDir": "dist/types",
     "declaration": true,

@@ -5,30 +5,30 @@ import { TalkActionOutput } from '../src/output/templates/TalkActionOutput';
 @Component()
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export class TestComponent extends BaseComponent {
-    async LAUNCH() {
-        return this.$send('welcome');
-    }
+  async LAUNCH() {
+    return this.$send('welcome');
+  }
 
-    bot() {
-        return this.$send({ message: `bot` });
-    }
+  bot() {
+    return this.$send({ message: `bot` });
+  }
 
-    goodbye() {
-        return this.$send({ message: `goodbye`, listen: false });
-    }
+  goodbye() {
+    return this.$send({ message: `goodbye`, listen: false });
+  }
 
-    empty() {
-        return;
-    }
+  empty() {
+    return;
+  }
 
-    silence() {
-        return this.$send('silence');
-    }
+  silence() {
+    return this.$send('silence');
+  }
 
-    barge() {
-        return this.$send(TalkActionOutput, {
-            message: `barge`,
-            bargeIn: true,
-        });
-    }
+  barge() {
+    return this.$send(TalkActionOutput, {
+      message: `barge`,
+      bargeIn: true,
+    });
+  }
 }

@@ -5,15 +5,15 @@ import { Action } from './output';
 import { TransformAction } from './output/decorators/transformation/TransformAction';
 
 export class VonageResponse extends JovoResponse {
-    readonly $type = 'vonage';
-    @IsObject()
-    @ValidateNested()
-    @TransformAction()
-    action?: Action;
+  readonly $type = 'vonage';
+  @IsObject()
+  @ValidateNested()
+  @TransformAction()
+  action?: Action;
 
-    hasSessionEnded(): boolean {
-        return false;
-    }
+  hasSessionEnded(): boolean {
+    return false;
+  }
 }
 
 //

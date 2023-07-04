@@ -1,5 +1,5 @@
 {
-  "name": "@jovotech/platform-vonage",
+  "name": "@jbernavaprah/jovo-platform-vonage",
   "version": "4.5.9",
   "description": "Vonage integration on jovo",
   "main": "dist/cjs/index.js",

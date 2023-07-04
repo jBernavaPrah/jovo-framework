@@ -4,8 +4,8 @@ import { IsArray, IsObject, ValidateNested } from '@jovotech/output';
 import { TransformAction } from '../decorators/transformation/TransformAction';
 
 export class NormalizeVonageOutputTemplateResponse implements Partial<VonageResponse> {
-    [x: string]: unknown;
+  [x: string]: unknown;
 
-    @IsObject()
-    action!: Action;
+  @IsObject()
+  action!: Action;
 }

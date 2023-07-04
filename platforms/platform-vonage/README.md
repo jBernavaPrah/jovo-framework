@@ -20,7 +20,8 @@ $ npm install @jovotech/platform-vonage
 
 > Learn more in the docs: https://www.jovo.tech/marketplace/platform-vonage
 
-
+### Note:
+Rename the package name BEFORE open PR.
 
 ### Missing:
 - Documentation.

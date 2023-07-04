@@ -8,17 +8,17 @@ import { WebSocketEndpoint } from '../../actions/ConnectAction/WebSocketEndpoint
 import { PhoneEndpoint } from '../../actions/ConnectAction/PhoneEndpoint';
 
 export function TransformEndpoint(): PropertyDecorator {
-    return Type(() => EndpointBase, {
-        keepDiscriminatorProperty: true,
-        discriminator: {
-            property: 'type',
-            subTypes: [
-                { value: SipEndpoint, name: EndpointType.Sip },
-                { value: VBCEndpoint, name: EndpointType.VBC },
-                { value: AppEndpoint, name: EndpointType.App },
-                { value: WebSocketEndpoint, name: EndpointType.WebSocket },
-                { value: PhoneEndpoint, name: EndpointType.Phone },
-            ],
-        },
-    }) as PropertyDecorator;
+  return Type(() => EndpointBase, {
+    keepDiscriminatorProperty: true,
+    discriminator: {
+      property: 'type',
+      subTypes: [
+        { value: SipEndpoint, name: EndpointType.Sip },
+        { value: VBCEndpoint, name: EndpointType.VBC },
+        { value: AppEndpoint, name: EndpointType.App },
+        { value: WebSocketEndpoint, name: EndpointType.WebSocket },
+        { value: PhoneEndpoint, name: EndpointType.Phone },
+      ],
+    },
+  }) as PropertyDecorator;
 }

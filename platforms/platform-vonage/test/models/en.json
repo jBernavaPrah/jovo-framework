@@ -14,24 +14,13 @@
       ]
     },
     "goodbye": {
-      "phrases": [
-        "bye bye",
-        "goodbye",
-        "was a pleasure"
-      ]
+      "phrases": ["bye bye", "goodbye", "was a pleasure"]
     },
     "affirm": {
-      "phrases": [
-        "yes",
-        "yes please",
-        "sure"
-      ]
+      "phrases": ["yes", "yes please", "sure"]
     },
     "deny": {
-      "phrases": [
-        "no",
-        "no thanks"
-      ]
+      "phrases": ["no", "no thanks"]
     }
   }
 }

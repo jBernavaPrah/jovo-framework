@@ -7,14 +7,14 @@ import { VonageResponse } from './VonageResponse';
 import { VonagePlatform } from './VonagePlatform';
 
 export class Vonage extends Jovo<
-    VonageRequest,
-    VonageResponse,
-    Vonage,
-    VonageUser,
-    VonageDevice,
-    VonagePlatform
+  VonageRequest,
+  VonageResponse,
+  Vonage,
+  VonageUser,
+  VonageDevice,
+  VonagePlatform
 > {
-    get endpoint(): string {
-        return '';
-    }
+  get endpoint(): string {
+    return '';
+  }
 }

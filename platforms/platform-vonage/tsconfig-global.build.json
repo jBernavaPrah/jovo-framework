@@ -1,6 +1,0 @@
-{
-  "extends": "./tsconfig-global.json",
-  "compilerOptions": {
-    "declaration": false
-  }
-}

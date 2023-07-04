@@ -3,19 +3,19 @@ import { Vonage } from './Vonage';
 import { registerPlatformSpecificJovoReference } from '@jovotech/framework';
 
 declare module '@jovotech/framework/dist/types/Extensible' {
-    interface ExtensiblePluginConfig {
-        VonagePlatform?: VonageConfig;
-    }
+  interface ExtensiblePluginConfig {
+    VonagePlatform?: VonageConfig;
+  }
 
-    interface ExtensiblePlugins {
-        VonagePlatform?: VonagePlatform;
-    }
+  interface ExtensiblePlugins {
+    VonagePlatform?: VonagePlatform;
+  }
 }
 
 declare module '@jovotech/framework/dist/types/Jovo' {
-    interface Jovo {
-        $vonage?: Vonage;
-    }
+  interface Jovo {
+    $vonage?: Vonage;
+  }
 }
 registerPlatformSpecificJovoReference('$vonage', Vonage);
 
