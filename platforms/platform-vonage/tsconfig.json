@@ -1,7 +1,0 @@
-{
-  "extends": "./tsconfig-global.json",
-  "compilerOptions": {
-    "outDir": "./dist/cjs"
-  },
-  "include": ["src"]
-}
